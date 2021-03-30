@@ -30,21 +30,22 @@
 			<div id="hdr">
 				<h2><span id="viewers">100k</span> Pageviews</h2>
 			</div>
-			<div id="price">
-				<button id="prices">$16.00</button>
-				/month
-			</div>
 		</header>
 		
 		<div id="slider">
 			<input type="range" id="myrange" max="4" min="0" value="2" onchange="changed()">
 		</div>
 		
+		<div id="price">
+			<button id="prices">$16.00</button>
+			/month
+		</div>
+		
 		<div id="togglediv">
 			<div>
 				Monthly Billing
 			</div>
-			<div>
+			<div id="switcher">
 				<label class="switch">
 				  <input type="checkbox" id="annual">
 				  <span class="slider round"></span>
@@ -56,24 +57,36 @@
 		</div>
 		
 		<div id="trialdiv">
-			<div>
-				<table>
-					<tr>
-						<td><img src="images/icon-check.svg"/></td>
-						<td>Unlimited websites</td>
-					</tr>
-					<tr>
-						<td><img src="images/icon-check.svg"/></td>
-						<td>100% data ownership</td>
-					</tr>
-					<tr>
-						<td><img src="images/icon-check.svg"/></td>
-						<td>Email reports</td>
-					</tr>
-				</table>
+			<div class="half">
+				<div class="tbl">
+					<div class="tr">
+						<div class="td">
+							<img src="images/icon-check.svg" alt="checkmark"/>
+						</div>
+						<div class="td">
+							Unlimited websites
+						</div>
+					</div>
+					<div class="tr">
+						<div class="td">
+							<img src="images/icon-check.svg" alt="checkmark"/>
+						</div>
+						<div class="td">
+							100% data ownership
+						</div>
+					</div>
+					<div class="tr">
+						<div class="td">
+							<img src="images/icon-check.svg" alt="checkmark"/>
+						</div>
+						<div class="td">
+							E-mail reports
+						</div>
+					</div>
+				</div>
 			</div>
 			
-			<div id="trialbtn">
+			<div id="trialbtn" class="half">
 				<button id="trial">
 					Start my trial
 				</button>

@@ -69,6 +69,7 @@ header#main p{
 	margin:auto;
 	border-radius:10px;
 	box-shadow:10px 10px 20px rgba(0,0,0,.1);
+	position:relative;
 	}
 	
 header#pview{
@@ -81,10 +82,15 @@ header#pview{
 	width:50%;
 	}
 	
-#pview #price{
+#price{
 	text-align:right;
 	color:hsl(225,20%,60%);
 	font-weight:600;
+	position:absolute;
+	right:0;
+	top:0;
+	padding:46px 40px;
+	z-index:1;
 	}
 	
 #price button{
@@ -105,6 +111,8 @@ header#pview{
 	
 #slider{
 	padding:0px 40px 20px 40px;
+	position:relative;
+	z-index:5;
 	}
 	
 #slider input#myrange{
@@ -240,27 +248,34 @@ input:checked + .slider:before {
 	align-items:center;
 	}
 	
-#trialdiv div{
+#trialdiv .half{
 	width:50%;
 	color:hsl(225,20%,60%);
 	font-size:13px;
 	line-height:2;
 	}
 	
-#trialdiv tr td:nth-child(1){
-	padding:5px;
-	}	
-
-#trialdiv tr{
+.tbl{
+	display:table;
+	}
+	
+.tr{
+	display:table-row;
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 	}
-
-#trialdiv img{
-	height:10px;
+	
+.td{
+	display:table-cell;
+	line-height:2;
+	padding:7px;
 	}
 	
+.td img{
+	height:10px;
+	}
+
 #trialbtn{
 	text-align:right;
 	}
@@ -286,5 +301,102 @@ input:checked + .slider:before {
 	
 @media screen and (max-width: 699px){
 	
+	body{
+		background-size:auto 50% !important;
+		}
+
+	header#main h1{
+		font-size:22px;
+		padding:5px 0;
+		}
+	
+	#main p{
+		font-size:13px;
+		width:60%;
+		margin-left:20%;
+		}
+	
+	#sliderdiv{
+		width:90%;
+		}
+		
+	#hdr{
+		width:100% !important;
+		text-align:center;
+		}
+		
+	#price{
+		position:relative;
+		width:100%;
+		text-align:center;
+		padding:40px 10px 20px 10px;
+		}
+		
+	#togglediv{
+		padding:30px 10px;
+	}
+	
+	#togglediv div{
+		font-size:12px !important;
+		}
+	
+	#togglediv div:not(#switcher){
+		padding:0 !important;
+		}
+		
+	#switcher{
+		padding:10px !important;
+		}
+		
+	#trialdiv{
+		flex-direction:column;
+		padding-bottom:30px !important;
+		}
+		
+	.half{
+		width:100% !important;
+		text-align:center !important;
+		}
+	
+	.tbl{
+		display:flex;
+		flex-direction:column;
+		}
+		
+	.tr{
+		display:block;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		}
+		
+	.td{
+		display:inline-block;
+		line-height:2;
+		padding:7px;
+		}
+		
+	.td img{
+		height:10px;
+		}
+		
+	#trialbtn{
+		padding-top:30px;
+		}
+
+	#yearly:after{
+		content:'-25%';
+		position:absolute;
+		white-space:nowrap;
+		font-weight:800;
+		color:hsl(15,100%,70%);
+		background:hsl(14,92%,95%);
+		font-size:10px;
+		padding:2px 5px;
+		border-radius:11px;
+		left:100%;
+		top:50%;
+		transform:translate(2px, -50%);
+		}
 
 }

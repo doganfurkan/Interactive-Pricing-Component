@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <section id="container">
+  
+	<header id="main">
+		<h1>
+			Simple, traffic-based pricing
+		</h1>
+		<p>
+			Sign-up for our 30-day trial. No credit card required.
+		</p>
+	</header>
+	
+	<div id="sliderdiv">
+		<header id="pview">
+			<div id="hdr">
+				<h2><span id="viewers">100k</span> Pageviews</h2>
+			</div>
+			<div id="price">
+				<button id="prices">$16.00</button>
+				/month
+			</div>
+		</header>
+		
+		<div id="slider">
+			<input type="range" id="myrange" max="4" min="0" value="2" onchange="changed()">
+		</div>
+		
+		<div id="togglediv">
+			<div>
+				Monthly Billing
+			</div>
+			<div>
+				<label class="switch">
+				  <input type="checkbox" id="annual">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+			<div id="yearly">
+				Yearly Billing
+			</div>
+		</div>
+		
+		<div id="trialdiv">
+			<div>
+				<table>
+					<tr>
+						<td><img src="images/icon-check.svg"/></td>
+						<td>Unlimited websites</td>
+					</tr>
+					<tr>
+						<td><img src="images/icon-check.svg"/></td>
+						<td>100% data ownership</td>
+					</tr>
+					<tr>
+						<td><img src="images/icon-check.svg"/></td>
+						<td>Email reports</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id="trialbtn">
+				<button id="trial">
+					Start my trial
+				</button>
+			</div>
+		</div>
+	</div>
+	
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/firkan">Furkan Doğan</a>.
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

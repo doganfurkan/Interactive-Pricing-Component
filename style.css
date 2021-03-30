@@ -20,7 +20,7 @@ body{
 	font-size:10px;
 	text-align:center;
 	padding:10px;
-	background:linear-gradient(45deg,#222,#079);
+	background:linear-gradient(45deg,#444 0%,#222 50%,#069 50%,#046 100%);
 	color:#ddd;
 	}
 	

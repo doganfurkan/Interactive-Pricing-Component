@@ -102,10 +102,10 @@ header#pview{
 	
 #pview h2{
 	color:hsl(225,20%,60%);
-	font-size:1.1em;
-	font-weight:600;
+	font-size:1em;
+	font-weight:800;
 	text-transform:uppercase;
-	letter-spacing:2px;
+	letter-spacing:1px;
 	}
 	
 #slider{

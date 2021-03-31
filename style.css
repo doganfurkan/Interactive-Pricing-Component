@@ -124,9 +124,7 @@ header#pview{
 	outline:none;
 	}
 	
-#myrange::-webkit-slider-thumb,
-#myrange::-moz-range-thumb,
-#myrange::-ms-thumb{
+#myrange::-webkit-slider-thumb{
 	-webkit-appearance:none;
 	appearance:none;
 	width:50px;

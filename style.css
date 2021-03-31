@@ -13,11 +13,10 @@ body{
 	background-color:hsl(230,100%,99%);
 	background-repeat:no-repeat;
 	background-size:100% 50%;
-	font-size:15px;
 	}
 	
 .attribution{
-	font-size:10px;
+	font-size:.7em;
 	text-align:center;
 	padding:10px;
 	background:linear-gradient(45deg,#444 0%,#222 50%,#069 50%,#046 100%);
@@ -55,7 +54,7 @@ header#main{
 header#main h1{
 	color:hsl(227,35%,25%);
 	font-weight:800;
-	font-size:40px;
+	font-size:2.8em;
 	}
 	
 header#main p{
@@ -98,12 +97,12 @@ header#pview{
 	color:hsl(227,35%,25%);
 	font-weight:800;
 	border:0;
-	font-size:35px;
+	font-size:2.5em;
 	}
 	
 #pview h2{
 	color:hsl(225,20%,60%);
-	font-size:17px;
+	font-size:1.1em;
 	font-weight:600;
 	text-transform:uppercase;
 	letter-spacing:2px;
@@ -120,7 +119,7 @@ header#pview{
 	-webkit-appearance:none;
 	appearance:none;
 	height:10px;
-	background:hsl(224,65%,95%);
+	background:linear-gradient(to right,hsl(174,77%,80%) 0%,hsl(174,77%,80%) 50%,hsl(224,65%,95%) 50%,hsl(224,65%,95%) 100%);
 	border-radius:5px;
 	outline:none;
 	}
@@ -137,6 +136,10 @@ header#pview{
 	background-size:60% auto;
 	border-radius:50%;
 	box-shadow:0px 20px 25px rgba(16,213,194,.5);
+}
+
+#myrange:focus #myrange::-webkit-slider-thumb:focus{
+	outline:1px dotted #000;
 }
 	
 #myrange:hover{
@@ -158,7 +161,7 @@ header#pview{
 	
 #togglediv div{
 	padding:10px;
-	font-size:14px;
+	font-size:1em;
 	}
 	
 .switch {
@@ -235,7 +238,7 @@ input:checked + .slider:before {
 	font-weight:800;
 	color:hsl(15,100%,70%);
 	background:hsl(14,92%,95%);
-	font-size:12px;
+	font-size:.8em;
 	padding:2px 7px;
 	border-radius:11px;
 	left:calc(100% + 5px);
@@ -251,7 +254,7 @@ input:checked + .slider:before {
 #trialdiv .half{
 	width:50%;
 	color:hsl(225,20%,60%);
-	font-size:13px;
+	font-size:.8em;
 	line-height:2;
 	}
 	
@@ -285,7 +288,7 @@ input:checked + .slider:before {
 	border:2px solid hsl(227,35%,25%);
 	color:#fff;
 	letter-spacing:1px;
-	font-size:14px;
+	font-size:1em;
 	padding:10px 40px;
 	border-radius:20px;
 	transition:.3s;
@@ -306,12 +309,12 @@ input:checked + .slider:before {
 		}
 
 	header#main h1{
-		font-size:22px;
+		font-size:1.5em;
 		padding:5px 0;
 		}
 	
 	#main p{
-		font-size:13px;
+		font-size:1em;
 		width:60%;
 		margin-left:20%;
 		}
@@ -337,7 +340,7 @@ input:checked + .slider:before {
 	}
 	
 	#togglediv div{
-		font-size:12px !important;
+		font-size:0.9em !important;
 		}
 	
 	#togglediv div:not(#switcher){
@@ -391,7 +394,7 @@ input:checked + .slider:before {
 		font-weight:800;
 		color:hsl(15,100%,70%);
 		background:hsl(14,92%,95%);
-		font-size:10px;
+		font-size:.7em;
 		padding:2px 5px;
 		border-radius:11px;
 		left:100%;

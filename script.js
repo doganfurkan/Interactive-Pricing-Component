@@ -22,6 +22,8 @@ function changed(){
 	let pric = prc*discount;
 	priceplace.innerHTML = "$" + pric.toFixed(2);
 	viewerplace.innerHTML = viewers[i];
+	let perc = i*25;
+	myrange.style.background = "linear-gradient(to right,hsl(174,77%,80%) 0%,hsl(174,77%,80%) " + perc + "%,hsl(224,65%,95%) " + perc + "%,hsl(224,65%,95%) 100%";
 	}
 	
 checkBox.addEventListener('change', changed);
